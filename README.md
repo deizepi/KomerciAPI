@@ -4,7 +4,7 @@ API para uso do Webservice da Rede e-commerce (Komerci)
 
 Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", feito isso é só instanciar a classe correspondente ao método do Webservice que deseja usar passando os parâmetros corretamente e verificar qual foi o retorno obtido.
 
-** Não esqueça de ler o documento oficial da Rede **
+**Não esqueça de ler o documento oficial da Rede**
 
 [Manual Webservice Komerci](https://www.userede.com.br/Documents/Manuais/Manual_Komerci_WebService.pdf)
 
