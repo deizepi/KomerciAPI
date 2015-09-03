@@ -28,6 +28,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
           	$a = new GetAuthorized($pedido, $total, $transacao, $parcelas, $cartao, $mes, $ano, $cvc2, $portador);
           	$a->setConfTxn("S");
           	
+          	$resultado = $a->enviar();
+          	
   	    } catch(Exception  $erro){
 	        echo $erro->getMessage();
   	    }
@@ -56,6 +58,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         	
         	$a = new GetAuthorizedAVS($pedido, $total, $transacao, $parcelas, $cartao, $mes, $ano, $cvc2, $portador);
         	$a->setAVS($cpf, $cep, $endereco, $num);
+          	
+          	$resultado = $a->enviar();
         	
   	    } catch(Exception  $erro){
 	        echo $erro->getMessage();
@@ -73,6 +77,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         	$data_final 	= "20/08/2015";
         	
         	$a = new CouncilReport($data_inicial, $data_final, $transacao);
+          	
+          	$resultado = $a->enviar();
         	
   	    } catch(Exception  $erro){
 	        echo $erro->getMessage();
@@ -86,6 +92,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         try {
           	
         	$a = new SalesSumm();
+          	
+          	$resultado = $a->enviar();
         	
   	    } catch(Exception  $erro){
 	        echo $erro->getMessage();
@@ -109,7 +117,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         	$portador 		= "MARCOS DA SILVA LIMA";
         	
         	$a = new GetAuthorized($pedido, $total, $transacao, $parcelas, $cartao, $mes, $ano, $cvc2, $portador);
-        
+          	
+          	$resultado = $a->enviar();
         	if($resultado){
         
         	    $numPedido 	= $resultado->getNumPedido();
@@ -145,7 +154,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         	$portador 		= "MARCOS DA SILVA LIMA";
         	
         	$a = new GetAuthorized($pedido, $total, $transacao, $parcelas, $cartao, $mes, $ano, $cvc2, $portador);
-        
+          	
+          	$resultado = $a->enviar();
         	if($resultado){
         
         	    $data 		= $resultado->getData();
@@ -179,7 +189,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         	$portador 		= "MARCOS DA SILVA LIMA";
         	
         	$a = new GetAuthorized($pedido, $total, $transacao, $parcelas, $cartao, $mes, $ano, $cvc2, $portador);
-        
+          	
+          	$resultado = $a->enviar();
         	if($resultado){
         
         	    $data 		= $resultado->getData();
@@ -213,7 +224,8 @@ Para usar a API basta baixar todos os arquivos e importar a classe "Komerci", fe
         	$portador 		= "MARCOS DA SILVA LIMA";
         	
         	$a = new GetAuthorized($pedido, $total, $transacao, $parcelas, $cartao, $mes, $ano, $cvc2, $portador);
-        
+          	
+          	$resultado = $a->enviar();
         	if($resultado){
         
         	    $numAutor 	= $resultado->getNumAutor();
